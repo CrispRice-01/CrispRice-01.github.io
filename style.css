@@ -196,4 +196,17 @@ footer {
         font-size: 2rem;
     }
 
+    /* Interior page introduction */
+
+.page-intro {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.page-intro p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 1.1rem;
+}
 }
