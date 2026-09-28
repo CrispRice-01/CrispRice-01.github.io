@@ -1,12 +1,4 @@
-/* ========================================
-   BRIS' FITNESS
-   Main External Style Sheet
-   ======================================== */
-
-
-/* General page styles */
-
-* {
+{
     box-sizing: border-box;
 }
 
@@ -23,7 +15,6 @@ body {
 }
 
 
-/* Header */
 
 header {
     background-color: #18392b;
@@ -43,7 +34,6 @@ header p {
 }
 
 
-/* Navigation */
 
 nav {
     background-color: #10271e;
@@ -67,7 +57,6 @@ nav a:hover {
 }
 
 
-/* Main sections */
 
 section {
     max-width: 1000px;
@@ -89,7 +78,6 @@ section h2 {
 }
 
 
-/* Hero */
 
 .hero {
     text-align: center;
@@ -109,7 +97,6 @@ section h2 {
 }
 
 
-/* Interior page introductions */
 
 .page-intro {
     text-align: center;
@@ -124,7 +111,6 @@ section h2 {
 }
 
 
-/* Buttons */
 
 .button {
     display: inline-block;
@@ -140,7 +126,6 @@ section h2 {
 }
 
 
-/* Cards */
 
 .cards {
     display: flex;
@@ -162,7 +147,6 @@ section h2 {
 }
 
 
-/* Lists */
 
 ul {
     padding-left: 25px;
@@ -173,7 +157,6 @@ li {
 }
 
 
-/* Weekly schedule */
 
 .schedule {
     background-color: white;
@@ -183,7 +166,6 @@ li {
 }
 
 
-/* Table */
 
 .table-container {
     overflow-x: auto;
@@ -220,7 +202,6 @@ tbody tr:nth-child(even) {
 }
 
 
-/* Video */
 
 .video-container {
     max-width: 800px;
@@ -239,7 +220,6 @@ tbody tr:nth-child(even) {
 }
 
 
-/* Form */
 
 form {
     max-width: 700px;
@@ -293,7 +273,6 @@ form {
 }
 
 
-/* Text links */
 
 .text-link {
     color: #245c45;
@@ -305,7 +284,6 @@ form {
 }
 
 
-/* Final message */
 
 .final-message {
     text-align: center;
@@ -318,7 +296,6 @@ form {
 }
 
 
-/* Footer */
 
 footer {
     background-color: #10271e;
@@ -332,7 +309,6 @@ footer p {
 }
 
 
-/* Responsive design */
 
 @media (max-width: 700px) {
 
