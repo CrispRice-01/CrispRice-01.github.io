@@ -1,9 +1,5 @@
-{
+* {
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -14,13 +10,11 @@ body {
     line-height: 1.6;
 }
 
-
-
 header {
-    background-color: #18392b;
+    background-color: #234f3f;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 35px 20px;
 }
 
 header h1 {
@@ -30,308 +24,158 @@ header h1 {
 
 header p {
     margin-top: 8px;
-    margin-bottom: 0;
+    font-size: 1.1rem;
 }
 
-
-
 nav {
-    background-color: #10271e;
+    background-color: #18372d;
     text-align: center;
     padding: 15px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 12px;
+    margin: 5px 12px;
+    display: inline-block;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #a9d6b8;
     text-decoration: underline;
 }
 
-
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
 
 section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 30px;
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
 }
-
-section h2 {
-    color: #18392b;
-    font-size: 2rem;
-    margin-top: 0;
-}
-
-.alternate {
-    background-color: #e5eee8;
-    max-width: none;
-    padding-left: max(30px, calc((100% - 940px) / 2));
-    padding-right: max(30px, calc((100% - 940px) / 2));
-}
-
-
 
 .hero {
     text-align: center;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 50px 30px;
 }
 
-.hero h2 {
-    font-size: 2.7rem;
-    margin-bottom: 15px;
+h2 {
+    color: #234f3f;
 }
 
-.hero p {
-    max-width: 700px;
-    margin: 0 auto 30px;
-    font-size: 1.1rem;
+h3 {
+    color: #315f4e;
 }
-
-
-
-.page-intro {
-    text-align: center;
-    padding-top: 70px;
-    padding-bottom: 50px;
-}
-
-.page-intro p {
-    max-width: 750px;
-    margin: auto;
-    font-size: 1.1rem;
-}
-
-
 
 .button {
     display: inline-block;
-    background-color: #18392b;
+    background-color: #234f3f;
     color: white;
-    padding: 12px 25px;
     text-decoration: none;
+    padding: 12px 20px;
+    margin-top: 10px;
     border-radius: 5px;
 }
 
 .button:hover {
-    background-color: #2f604b;
+    background-color: #18372d;
 }
 
-
-
-.cards {
+.card-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    margin-top: 30px;
 }
 
 .card {
-    background-color: white;
-    padding: 25px;
+    flex: 1 1 250px;
+    background-color: #edf3f0;
+    padding: 20px;
     border-radius: 8px;
-    flex: 1;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-    color: #2f604b;
-    margin-top: 0;
-}
-
-
-
-ul {
-    padding-left: 25px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-
-
-.schedule {
-    background-color: white;
-    padding: 25px;
-    border-left: 5px solid #2f604b;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-
-
-.table-container {
-    overflow-x: auto;
-    margin-top: 30px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: white;
-}
-
-caption {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #18392b;
-    margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 th,
 td {
-    border: 1px solid #b8c7bd;
-    padding: 14px;
+    border: 1px solid #999;
+    padding: 12px;
     text-align: left;
 }
 
 th {
-    background-color: #18392b;
+    background-color: #234f3f;
     color: white;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #eef3ef;
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
-
-
-
-.video-container {
-    max-width: 800px;
-    margin: 30px auto 15px;
-}
-
-.video-container video {
-    display: block;
-    width: 100%;
-    max-width: 800px;
-    border-radius: 8px;
-}
-
-.video-note {
-    text-align: center;
-}
-
-
 
 form {
-    max-width: 700px;
-    margin: 30px auto 0;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
 }
 
-.form-row {
-    margin-bottom: 20px;
-}
-
-.form-row label {
+label {
     display: block;
-    margin-bottom: 7px;
     font-weight: bold;
-    color: #18392b;
+    margin-top: 15px;
 }
 
-.form-row input[type="text"],
-.form-row input[type="email"],
-.form-row select,
-.form-row textarea {
+input,
+select,
+textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #9ca9a0;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #888;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
 }
 
-.form-row textarea {
-    resize: vertical;
-}
-
-.submit-button {
-    background-color: #18392b;
+input[type="submit"] {
+    background-color: #234f3f;
     color: white;
     border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
+    margin-top: 20px;
     cursor: pointer;
-    font-size: 1rem;
     font-weight: bold;
 }
 
-.submit-button:hover {
-    background-color: #2f604b;
+input[type="submit"]:hover {
+    background-color: #18372d;
 }
 
-
-
-.text-link {
-    color: #245c45;
-    font-weight: bold;
+video {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
 }
-
-.text-link:hover {
-    color: #10271e;
-}
-
-
-
-.final-message {
-    text-align: center;
-}
-
-.final-message p {
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 
 footer {
-    background-color: #10271e;
+    background-color: #18372d;
     color: white;
     text-align: center;
     padding: 25px;
 }
 
-footer p {
-    margin: 0;
+footer a {
+    color: white;
 }
 
-
-
 @media (max-width: 700px) {
-
-    .cards {
-        flex-direction: column;
-    }
-
-    nav {
-        position: static;
-    }
 
     nav a {
         display: block;
         margin: 8px;
-    }
-
-    .hero {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
     }
 
     header h1 {
@@ -339,20 +183,10 @@ footer p {
     }
 
     section {
-        padding: 45px 20px;
-    }
-
-    .alternate {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    th,
-    td {
-        padding: 10px;
-    }
-
-    form {
         padding: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
     }
 }
